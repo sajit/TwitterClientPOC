@@ -3,7 +3,10 @@
   <groupId>twitterClient</groupId>
   <artifactId>myTwitterClient</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Twitter Client</name>
+  <name>Twitter Client</name>	
+  <properties>
+  	<java-version>1.6</java-version>
+  </properties>
   <dependencies>
   	<dependency>
     <groupId>commons-collections</groupId>
@@ -15,5 +18,30 @@
     	<artifactId>twitter4j-core</artifactId>
     	<version>2.2.4</version>
     </dependency>
+    <dependency>
+	    <groupId>commons-logging</groupId>
+	    <artifactId>commons-logging-api</artifactId>
+	    <version>1.1</version>
+	</dependency>
+	<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>1.8</version>
+	</dependency>
+    <dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.8.2</version>
+  		<type>pom</type>
+  		<scope>test</scope>
+  	</dependency>
   </dependencies>
+  <repositories>
+		<repository>
+			<id>maven2-repository.java.net</id>
+			<name>Java.net Repository for Maven</name>
+			<url>http://download.java.net/maven/2/</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
 </project>

@@ -12,5 +12,7 @@ public interface TwitterClient {
 	 * Get user's timeline
 	 */
 	public ResponseList<Status> getHomeTimeline() throws TwitterException;
+	
+	public boolean isAuthenticated();
 
 }
