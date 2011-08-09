@@ -43,4 +43,18 @@
 			<layout>default</layout>
 		</repository>
 	</repositories>
+	<build>
+		<!-- Copying resource files -->
+		<resources>
+			<resource>
+				<directory>src/main/java/</directory>
+				<includes>
+					<include>**/*.properties</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+	</build>
 </project>
